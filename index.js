@@ -54,7 +54,7 @@ Person.prototype.eat = function(someFood) {
 Person.prototype.poop = function() {
   this.stomach = [];
 }
-Person.prototype.toString = function(){
+Person.prototype.toString = function()   {
   return `${this.name}, ${this.age}`;
 }
 
@@ -111,10 +111,10 @@ Baby.prototype.play = function() { //a specific prototype function only for Baby
   TASK 4
 
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. When this is called in context of the document itself, it refers to the Window object (global context)
+  2. Unless strict mode is specified, when this is called in a regular function, it refers to the window (global context)
+  3. When this is called inside of a method,  it refers to the object
+  4. this is also used in a constructor function to refer to the object being created. 
 */
 
 
